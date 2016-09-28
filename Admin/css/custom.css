@@ -1,0 +1,23 @@
+body{
+	background:url(../images/Untitled-3-01.jpg);
+}
+.login{
+	margin-top:10%;
+	background: rgba(234, 46,3, 0.15);
+	border-radius: 15px;
+}
+h1{
+	text-align:center;
+}
+input[type="email"], input[type="password"]{
+display:block;
+margin-bottom:20px;
+
+}
+.btnn{
+	margin-bottom:20px;
+}
+.login form input[type="email"], input[type="password"]{
+	box-shadow: 0 1px 0 #fff, 0 -5px 4px rgba(0,0,0,0.1) inset;
+	background-color: rgba(255, 255, 255, 0.8);
+}

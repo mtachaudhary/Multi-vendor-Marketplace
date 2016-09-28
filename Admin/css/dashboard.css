@@ -1,0 +1,549 @@
+/*****************
+	Body CSS
+******************/
+.nopadding{
+	padding:0px;
+}
+.nomargin {
+	margin:0;
+}
+.pages {
+    width: 80%;
+}
+.pages .col-sm-12 .panel-title > p {
+	margin-bottom:0;
+}
+.brd {
+	border:1px solid red
+}
+
+.logo img{
+	width: 150px;
+	margin: 20px 0px 20px 50px;
+}
+.text-center {
+    text-align: center;
+}
+.label-red {
+    background-color:#DF2E1B;
+}
+.label-black {
+    background-color:#222534;
+}
+
+/*////////////////////////////////Sidebar/////////////////////////////////////////////////////////////*/
+
+.sidebar{
+	background:#1C1E2B;
+	height:100vh;
+	width: 20%;
+	position:fixed;
+	overflow:auto;
+}
+
+/*********************
+	Profile Info
+*********************/
+.profile { 
+	display:inline-block
+}
+.profile_pic{
+	width:35%;
+	float:left;
+}
+/*.image-circle{
+	border-radius:50%;
+}*/
+.profile_pic img {
+	width:60px;
+	height:60px;
+	margin-left: 14%;
+    margin-top: 30px;
+}
+/*.image-circle{
+	width:70%;
+	z-index: 1000;
+    position: inherit;
+	background: #fff;
+    border: 1px solid rgba(52, 73, 94, 0.44);
+    padding: 4px;
+}*/
+.profile_info{
+	float:left;
+	width:65%;
+	padding-top:38px;
+	color:#D7D7D7;
+	cursor:pointer;
+}
+.profile_info h2{
+	font-size: 16px;
+    font-weight: 300;
+	margin-top: 5px;
+}
+.profile_info h2:hover{
+	text-decoration:underline;
+}
+
+/*********************
+	Left Menu
+*********************/
+
+.left-menu{
+	margin-top:20px;
+}
+
+/********** Panel Heading ***************/
+.left-menu .panel-heading {
+	color:#D7D7D7;
+    background-color:#1C1E2B;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-color:transparent;
+	padding:0px;
+}
+.left-menu .panel-heading a{
+	padding: 12px 15px;
+}
+.left-menu .panel-heading:hover{
+	/*background:#DF2E1B*/;
+/*	background: -moz-linear-gradient(#df2E1B, #2C4257), #2A3F54;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;*/
+	background: -moz-linear-gradient(#142A3F, #2C4257), #2A3F54;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+}
+.left-menu .panel-title{
+	font-size:13px;
+}
+.left-menu .panel-title i{
+	font-size:16px;
+}
+.left-menu .panel-group .panel + .panel{
+	border-radius:none;
+	margin-top: 0px;
+	border-top:none;
+}
+.left-menu a:focus{
+	outline:none;
+	text-decoration:none;
+}
+.left-menu a{
+	display:block;
+}
+.left-menu a:hover{
+	text-decoration:none;
+}
+.left-menu .panel-defult{
+	border-color:transparent;
+}
+.left-menu .panel-heading i{
+	padding-right: 15px;
+}
+.left-menu .panel {
+    margin-bottom:0px;
+	border:none;
+	background:#1C1E2B;
+}
+
+/********** Panel Body ***************/
+.left-menu .panel-body{
+	padding:0px;
+	/*border-top-color: #383434 !important;
+	border-top: 1px solid #383434 ;*/
+	border:none !important;
+}
+.left-menu .list-group-item:first-child{
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+}
+.left-menu .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+	margin-bottom:none;
+}
+.left-menu ul{
+	margin-bottom:0px;
+	margin-top:3px;
+}
+.left-menu .panel-body ul a{
+	padding: 10px 40px;
+	color:#ACACAC;
+	position:relative;
+	display:block;
+}
+.left-menu ul li::before {
+    background: #425668;
+    bottom: auto;
+    content: "";
+    height: 8px;
+    left: 23px;
+    margin-top: 15px;
+    position: absolute;
+    right: auto;
+    width: 8px;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.left-menu ul li::after {
+    border-left: 1px solid #425668;
+    bottom: 0;
+    content: "";
+    left: 27px;
+    position: absolute;
+    top: 0;
+}
+.left-menu .panel-body ul a:hover{
+	color:#FFFFFF;
+}
+.left-menu .panel-body ul li{
+	color:#CFCFCF;
+	font-size:13px;
+	display:block;
+	position:relative;
+}
+
+.left-menu .panel-body ul li:hover{
+	/*border-left:1px solid #FFFFFF;*/
+	/*background-color:#DF2E1B;*/
+	/*background: -moz-linear-gradient(#df2e1b, #1c1e2b), #2A3F54;*/
+	background: -moz-linear-gradient(#df2E1B, #2C4257), #2A3F54;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+	cursor:pointer;
+}
+.left-menu .list-group-item{
+	border:none;
+	padding:0px;
+	background-color:#222534;
+}
+.left-menu .list-group-item:last-child{
+	border:none;
+}
+
+/**********************
+	Active Classes 
+***********************/
+.active0{
+	background: -moz-linear-gradient(#142A3F, #2C4257), #2A3F54;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+}
+.active1{
+	border-right: 5px solid #FFFFFF;
+	background: RGBA(53, 66, 75, 0.4);
+	box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+	color:#FFFFFF !important;
+}
+
+.active2{
+	border-left:1px solid #FFFFFF;
+	/*background-color:#DF2E1B;*/
+	/*background: -moz-linear-gradient(#df2e1b, #1c1e2b), #2A3F54;*/
+	background: -moz-linear-gradient(#df2E1B, #2C4257), #2A3F54;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 1px 0, inset rgba(255, 255, 255, 0.16) 0 1px 0;
+	cursor:pointer;
+}
+
+/**********************
+	Loader
+***********************/
+#load{
+	position:absolute;
+	width:100%;
+	height:100vh;
+	background:rgba(255,255,255,0.9);
+	text-align:center;
+	display:none;
+	z-index:+99999;
+	
+}
+#load img{
+	margin-top:25%;
+}
+	
+/*////////////////////////////////Sidebar/////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////////////Shake Effect//////////////////////////////////////////////////////*/
+.cmn-t-shake:hover {
+  animation: shake .5s ease-in-out;
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/****************************************** Shake Effect**********************************************/
+
+/************************************ Admin Header Starts *******************************************/
+
+.header_admin .bar img{
+	float:left;
+	width:17px;
+	margin: 19px 19px;
+}
+.header_admin li a{
+	text-decoration:none;
+	
+}
+.header_admin .navbar_right{
+	padding: 10px 50px 0px 0px;
+	text-align:right;
+	float:right;
+}
+.header_admin .navbar_right span{
+	cursor:pointer;
+}
+.header_admin{
+	display:block;
+	border-bottom:inset 1px RGBA(28, 30, 43, 0.3);
+}
+.header_admin li a span{
+	color:#1C1E2B;
+	font-size:12px;
+}
+.header_admin li a span:hover{
+	text-decoration:underline;
+}
+
+/************* Drop Down Starts **********/
+.header_admin .dropdown-menu{
+	top:100%;
+	right:0px;
+	left:auto;
+	min-width:200px;
+	margin:0px;
+	border-radius:0px;
+}
+.header_admin .dropdown-menu > li > a:hover{
+	background-color:#E9E9E9;
+	border-left:2px solid #DF2E1B;
+	color:#DF2E1B;
+}
+.header_admin .dropdown-menu > li > a{
+	padding: 5px 20px;
+}
+/************* Drop Down Ends **********/
+
+.navbar_right img{
+	width: 35px;
+	height: 35px;
+	margin-right: 10px;
+	/*border-radius: 50%;*/
+	cursor:pointer;
+}
+
+/*************************************************** Admin Header End **********************************************************/
+
+/*************************************************** Dashboard Home Starts *****************************************************/
+
+/*#admin_content{
+	padding: 0px 20px;
+}*/
+.page-title {
+    padding: 10px 0 0 18px;
+}
+#admin-content .text-overflow {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info-box1{
+	min-height:200px;
+	/*margin-right:33px;
+	width:30%;*/
+	border-radius:5px;
+	border:1px solid #DF2E1B;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.info-box2{
+	min-height:200px;
+	/*margin-right:33px;
+	width:30%*/;
+	border-radius:5px;
+	border:1px solid #1C1E2B;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.info-box-big{
+	min-height:415px;
+	/*margin-right:33px;
+	width:30%*/;
+	border-radius:5px;
+	border:1px solid #1C1E2B;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+.info-box3{
+	min-height:200px;
+	/*margin-right:33px;
+	width:30%;*/
+	border-radius:5px;
+	border:1px solid #222534;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+#admin_content .panel{
+	border:none;
+}
+
+#admin_content .panel-body {
+	padding:0px;
+}
+.info-box1 .panel-heading{
+	background:#DF2E1B;
+	color:#FFFFFF;
+	font-size:18px;
+}
+.info-box2 .panel-heading{
+	background:#1C1E2B;
+	color:#FFFFFF;
+	font-size:18px;
+}
+.info-box3 .panel-heading{
+    background: #1d62f0;
+    background: -moz-linear-gradient(-45deg, #1d62f0 0%, #1ad6fd 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#1d62f0), color-stop(100%,#1ad6fd));
+    background: -webkit-linear-gradient(-45deg, #1d62f0 0%,#1ad6fd 100%);
+    background: -o-linear-gradient(-45deg, #1d62f0 0%,#1ad6fd 100%);
+    background: -ms-linear-gradient(-45deg, #1d62f0 0%,#1ad6fd 100%);
+    background: linear-gradient(135deg, #1d62f0 0%,#1ad6fd 100%);
+	background:#222534;
+	color:#FFFFFF;
+	font-size:18px;
+}
+.info-box-big .panel-heading{
+	background:#DF2E1B;
+	color:#FFFFFF;
+	font-size:18px;
+}
+
+/*************************************************** Dashboard Home Ends *****************************************************/
+
+/*************************************************** Panel Buttons Starts *****************************************************/
+.btn i{
+    margin-left: -12px;
+    margin-right: 3px;
+    border-right: 1px solid rgba(176,176,176,0.2);
+    padding: 9px 11px;
+}
+.btn-xs i{
+    margin-left: -5px;
+    margin-right: 0px;
+    border-right: 1px solid rgba(176,176,176,0.2);
+    padding: 4px 5px;
+}
+/*************************************************** Panel Buttons Starts *****************************************************/
+.cat-panel .panel{
+	margin:13px;
+}
+.cat-content{
+	border:1px solid #E1E1E1;
+	border-radius:3px;
+}
+.add-content {
+	border-bottom:1px solid #E1E1E1;
+	padding: 5px;
+	margin-bottom: 5px;
+	display:block;
+	text-align:right;
+}
+.show-content{
+	padding:10px;
+}
+
+/*************************** Modal Starts ******************************/
+.modal-body{
+	border-bottom:1px solid #E5E5E5;
+	margin-bottom:15px;
+}
+.modal-btn{
+	text-align:right;
+	padding-right:15px;
+}
+/*************************** Modal Ends ******************************/
+
+/*************************** Admin Profile Starts ******************************/
+
+.tab-base{
+	margin-bottom: 35px;
+}
+.tab-base .tab-content{
+	background-color: #fff;
+    box-shadow: 0 2px 0 rgba(0,0,0,0.05);
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    padding: 15px;
+}
+.tab-base .nav-pills li a{
+	font-size:20px;
+	border-radius:0px;
+	outline:none;
+	color:#5bc0de;
+}
+.nav-pills > li.active > a{
+	background-color:#5bc0de;
+	color:rgba(255,255,255,1.00);
+}
+.nav-pills > li.active > a:focus{
+	background-color:#5bc0de;
+	color:rgba(255,255,255,1.00);
+}
+.tab-pane{
+	border:1px solid #ebebeb;
+	padding:0px 15px;
+}
+.form-manage-detail label{
+	font-size:16px;
+}
+.form-manage-detail .btn{
+	margin-right: 15px;
+}
+.btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  background: red;
+  cursor: inherit;
+  display: block;
+}
+.file-input-label {
+	padding: 0px 10px;
+	display: table-cell;
+	vertical-align: middle;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/*************************** Admin profile Ends ******************************/

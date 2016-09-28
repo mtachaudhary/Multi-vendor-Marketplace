@@ -1,0 +1,480 @@
+/*******************
+FONTS
+*******************/
+
+@import url(http://fonts.googleapis.com/css?family=Bree+Serif);
+
+/*******************
+SELECTION STYLING
+*******************/
+
+::selection {
+	color: #fff;
+	background: #f676b2; /* Safari */
+}
+::-moz-selection {
+	color: #fff;
+	background: #f676b2; /* Firefox */
+}
+
+/*******************
+BODY STYLING
+*******************/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background: url(../images/bg1.png) repeat;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:300;
+	text-align: left;
+	text-decoration: none;
+}
+
+#wrapper {
+	/* Center wrapper perfectly */
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -200px;
+}
+
+/*
+.gradient {
+	width: 600px;
+	height: 600px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -300px;
+	
+	background: url(../images/gradient.png) no-repeat;
+}
+*/
+
+.gradient {
+	/* Center Positioning */
+	width: 600px;
+	height: 600px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -300px;
+	margin-top: -300px;
+	
+	/* Fallback */ 
+	background-image: url(../images/gradient.png); 
+	background-repeat: no-repeat; 
+	
+	/* CSS3 Gradient */
+	background-image: -webkit-gradient(radial, 0% 0%, 0% 100%, from(rgba(213,246,255,1)), to(rgba(213,246,255,0)));
+	background-image: -webkit-radial-gradient(50% 50%, 40% 40%, rgba(213,246,255,1), rgba(213,246,255,0));
+	background-image: -moz-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
+	background-image: -ms-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
+	background-image: -o-radial-gradient(50% 50%, 50% 50%, rgba(213,246,255,1), rgba(213,246,255,0));
+}
+
+/*******************
+LOGIN FORM
+*******************/
+
+.login-form {
+	width: 300px;
+	margin: 0 auto;
+	position: relative;
+	z-index:5;
+	
+	background: #f3f3f3;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/*******************
+HEADER
+*******************/
+
+.login-form .header {
+	padding: 30px 25px 20px 25px;
+	text-align:center;
+}
+
+.login-form .header img{
+	max-width:100%;
+	width:50%;
+}
+hr { 
+	margin-top:5px;
+	margin-bottom:5px;
+	border: 0;
+ 	height: 1px; 
+	background-image: -moz-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	background-image: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	background-image: -webkit-gradient(linear, 100% 0, 0 0, from(rgba(0, 0, 0, 0)), color-stop(0.5, rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+	background-image: -o-linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+ }
+ 
+.login-form .header h1 {
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 28px;
+	line-height:34px;
+	color: #414848;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	margin-bottom: 10px;
+}
+
+.login-form .header span {
+	font-size: 12px;
+	line-height: 16px;
+	color: #678889;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+}
+
+/*******************
+CONTENT
+*******************/
+
+.login-form .content {
+	padding: 0 30px 25px 30px;
+}
+
+/* Input field */
+.login-form .content .input {
+	width: 188px;
+	padding: 15px 25px;
+	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #9d9e9e;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.50);
+}
+
+/* Second input field */
+.login-form .content .password, .login-form .content .pass-icon {
+	margin-top: 25px;
+}
+
+.login-form .content .input:hover {
+	background: #dfe9ec;
+	color: #414848;
+}
+
+.login-form .content .input:focus {
+	background: #dfe9ec;
+	color: #414848;
+	
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.25);
+}
+
+.user-icon, .pass-icon {
+	width: 46px;
+	height: 47px;
+	display: block;
+	position: absolute;
+	left: 0px;
+	padding-right: 2px;
+	z-index: 3;
+	
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+.user-icon {
+	top:147px; /* Positioning fix for slide-in, got lazy to think up of simpler method. */
+	background: rgba(65,72,72,0.75) url(../images/user-icon.png) no-repeat center;	
+	background: rgba(223,46,27,0.85) url(../images/user-icon.png) no-repeat center;
+}
+
+.pass-icon {
+	top:221px;
+	background: rgba(223,46,27,0.85) url(../images/pass-icon.png) no-repeat center;
+}
+
+ Animation 
+.input, .user-icon, .pass-icon, .button, .register {
+	transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+}
+
+/*******************
+FOOTER
+*******************/
+
+.login-form .footer {
+	padding: 15px 15px 30px 15px;
+	overflow: auto;
+	background: #d4dedf;
+	border-top: 1px solid #fff;
+	box-shadow: inset 0 1px 0 rgba(0,0,0,0.15);
+	box-shadow: -moz-box-shadow inset 0 1px 0 rgba(0,0,0,0.15);
+	box-shadow:-webkit-box-shadow inset 0 1px 0 rgba(0,0,0,0.15);
+}
+
+ /*Login button */
+.login-form .footer .button {
+	float:right;
+	padding: 7px 16px;
+	
+	/*font-family: 'Bree Serif', serif;*/
+	font-size: 15px;
+	color: #1C1E2B;
+	text-shadow: 0px 1px 0 rgba(0,0,0,0.25);
+	
+	background-color:transparent;
+	border: 1px solid #1C1E2B;
+	border-radius: 5px;
+	cursor: pointer;
+	position:relative;
+	top:18px;
+	box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 0 2px rgba(256,256,256,0.75);
+}
+
+.login-form .footer .button:hover {
+	background: #DF2E1B;
+	border: 1px solid rgba(256,256,256,0.75);
+	color:#FFFFFF;
+	
+	box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);
+}
+
+/*.login-form .footer .button:focus {
+	position: relative;
+	bottom: -1px;
+	
+	background: #56c2e1;
+	
+	box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-moz-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+	-webkit-box-shadow: inset 0 1px 6px rgba(256,256,256,0.75);
+}*/
+
+/* Register button */
+.login-form .footer .register {
+	display: block;
+	float: right;
+	padding: 10px;
+	margin-right: 20px;
+	
+	background: none;
+	border: none;
+	cursor: pointer;
+	
+	font-family: 'Bree Serif', serif;
+	font-weight: 300;
+	font-size: 18px;
+	color: #414848;
+	text-shadow: 0px 1px 0 rgba(256,256,256,0.5);
+}
+
+.login-form .footer .register:hover {
+	color: #3f9db8;
+}
+
+.login-form .footer .register:focus {
+	position: relative;
+	bottom: -1px;
+}
+.login-form .footer a{
+	font-size: 16px;
+	line-height: 16px;
+	color: #1C1E2B;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+	cursor:pointer;
+	position:relative;
+	top:35px;
+}
+.login-form .footer a:hover{
+	text-decoration:underline;
+}
+
+
+/*******************
+button styletwo
+*******************/
+
+.new_btn{
+	float:right;
+	min-width: 100px;
+	max-width: 250px;
+	display: block;
+	margin-top:10px;
+	padding: 12px;
+	border:1px solid #222534;
+	background: none;
+	color: #222534;
+	font-size:14px;
+	cursor:pointer;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.new_btn_tr{
+	-webkit-transition: border-color 0.4s, color 0.4s;
+	transition: border-color 0.4s, color 0.4s;
+}
+
+.new_btn_tr::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #222534;
+	z-index: -1;
+	opacity: 0;
+	-webkit-transform: scale3d(0.7, 1, 1);
+	transform: scale3d(0.7, 1, 1);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.new_btn_tr, .new_btn_tr::before 
+{
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.new_btn_tr:hover {
+	color: #fff;
+	border-color: #222534;
+}
+
+.new_btn_tr:hover::before {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+/*******************
+Button style 3
+*******************/
+
+
+
+/*#btn{
+	background-color:#3bb3e0;
+	font-family: 'Open Sans', sans-serif;
+	font-size:14px;
+	text-decoration:none;
+	color:#fff;
+	position:relative;
+	padding:9px 20px;
+	border-left:solid 1px #560B0C;
+	float:right;
+	background-image: linear-gradient(bottom, rgb(28,30,43) 0%, rgb(34,37,52) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(28,30,43) 0%, rgb(34,37,52) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(28,30,43) 0%, rgb(34,37,52) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(28,30,43) 0%, rgb(34,37,52) 100%);
+	background-image: -webkit-gradient(
+	linear,
+	left bottom,
+	left top,
+	color-stop(0, rgb(44,160,202)),
+	color-stop(1, rgb(62,184,229))
+	);
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-box-shadow: inset 0px 1px 0px #2ab7ec, 0px 1px 0px 0px #156785, 0px 5px 5px #999;
+	-moz-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 1px 0px 0px #156785, 0px 5px 5px #999;
+	-o-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 1px 0px 0px #156785, 0px 5px 5px #999;
+	box-shadow: inset 0px 1px 0px #2ab7ec, 0px 1px 0px 0px #156785, 0px 5px 5px #999;
+}
+
+#btn:active {
+	top:3px;
+	background-image: linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(62,184,229)),color-stop(1, rgb(44,160,202)));
+	-webkit-box-shadow: inset 0px 1px 0px #573030, 0px 2px 0px 0px #653A3A, 0px 5px 3px #999;
+	-moz-box-shadow: inset 0px 1px 0px #573030, 0px 2px 0px 0px #653A3A, 0px 5px 3px #999;
+	-o-box-shadow: inset 0px 1px 0px #573030, 0px 2px 0px 0px #653A3A, 0px 5px 3px #999;
+	box-shadow: inset 0px 1px 0px #573030, 0px 2px 0px 0px #653A3A, 0px 5px 3px #999;
+}
+
+#btn:before{
+	background-color:#2561b4;
+	content:url(../images/pass-icon.png);
+	width:35px;
+	max-height:29px;
+	height:100%;
+	position:absolute;
+	display:block;
+	padding-top:8px;
+	top:0px;
+	left:-36px;
+	font-size:16px;
+	font-weight:bold;
+	color:#8fd1ea;
+	text-shadow:1px 1px 0px #07526e;
+	border-right:solid 1px #560B0C;
+	background-image: linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(223,46,27) 0%, rgb(34,37,52) 100%);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, rgb(10,94,125)),color-stop(1, rgb(14,139,184)));
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-webkit-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 1px 0px 0px #032b3a, 0px 5px 5px #999 ;
+	-moz-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 1px 0px 0px #032b3a, 0px 5px 5px #999 ;
+	-o-box-shadow:inset 0px 1px 0px #2ab7ec, 0px 1px 0px 0px #032b3a, 0px 5px 5px #999 ;
+	box-shadow:inset 0px 1px 0px #2ab7ec, 0px 1px 0px 0px #032b3a, 0px 5px 5px #999 ;
+}
+#btn:active::before {
+	top:-3px;
+	-webkit-box-shadow:inset 0px 1px 0px #573030, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #222534, 2px 2px 0px 0px #222534, 2px 5px 0px 0px #222534, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+	-moz-box-shadow:inset 0px 1px 0px #573030, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #222534, 2px 2px 0px 0px #222534, 2px 5px 0px 0px #222534, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+	-o-box-shadow:inset 0px 1px 0px #573030, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+	box-shadow:inset 0px 1px 0px #573030, 0px 5px 0px 0px #032b3a, 1px 1px 0px 0px #044a64, 2px 2px 0px 0px #044a64, 2px 5px 0px 0px #044a64, 6px 4px 2px #0b698b, 0px 10px 5px #999 ;
+}*/
